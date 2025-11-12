@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Project - A Kyler Chans Productions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.19/src/index.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/kc_image_pfp.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-neutral-900">
+    <header class="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-4xl px-6 bg-white-900 rounded-md bg-clip-padding backdrop-filter hover:opacity-100 transition duration-300 opacity-90 animate-slideInDown" id="navbar">
+        <div class="bg-neutral-800/95 backdrop-blur-2xl border border-neutral-700/50 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-amber-500/10">
+            <div class="px-6 py-4">
+                <nav class="flex justify-between items-center">
+                    <div class="flex items-center gap-3 group">
+                        <div class="w-8 h-8 bg-amber-600 rounded-lg flex items-center justify-center group-hover:shadow-lg group-hover:shadow-amber-600/50 transition-all duration-300">
+                            <span class="text-white font-bold text-sm">20</span>
+                        </div>
+                        <h1 class="text-lg font-instrument font-italic font-bold text-white hover:scale-105 transition-transform duration-200">20th Century Reads</h1>
+                    </div>
+                    
+                    <div class="hidden md:flex items-center space-x-6">
+                        <a name="overview-nav" href="#overview" class="text-neutral-300 hover:text-amber-400 transition-all duration-200 font-medium text-xs underline-animation">Overview</a>
+                        <a name="timeline-nav" href="#timeline" class="text-neutral-300 hover:text-amber-400 transition-all duration-200 font-medium text-xs underline-animation">Timeline</a>
+                        <a name="innovations-nav" href="#innovations" class="text-neutral-300 hover:text-amber-400 transition-all duration-200 font-medium text-xs underline-animation">Innovations</a>
+                        <a name="sources-nav" href="#sources" class="text-neutral-300 hover:text-amber-400 transition-all duration-200 font-medium text-xs underline-animation">Sources</a>
+                    </div>
+
+                    <button id="mobileMenuBtn" class="md:hidden text-neutral-300 hover:text-amber-400 transition-all duration-300 hover:rotate-90">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </nav>
+
+                <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t border-neutral-700/30">
+                    <div class="flex flex-col space-y-4 pt-4">
+                        <a name="overview-nav" href="#overview" class="text-neutral-300 hover:text-amber-400 transition-all duration-200 py-2 font-medium hover:pl-2">Overview</a>
+                        <a name="timeline-nav" href="#timeline" class="text-neutral-300 hover:text-amber-400 transition-all duration-200 py-2 font-medium hover:pl-2">Timeline</a>
+                        <a name="innovations-nav" href="#innovations" class="text-neutral-300 hover:text-amber-400 transition-all duration-200 py-2 font-medium hover:pl-2">Innovations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero-section">
+        <div class="flex flex-row min-h-screen justify-center items-center px-6">
+            <div class="p-8 md:p-12 rounded-xl text-white max-w-4xl animate-fadeInScale">
+                <h1 class="text-5xl md:text-7xl lg:text-7xl font-semibold text-center leading-tight mt-10">
+                    Military Technology in the
+                    <span class="italic font-instrument bg-gradient-to-r from-amber-200 via-amber-500 to-amber-700 bg-clip-text text-transparent">20th</span>
+                    century
+                </h1>
+
+                <p class="text-neutral-300 text-center mt-4 md:mt-6 text-base leading-relaxed animate-slideInUp delay-1 max-w-3xl mx-auto">
+                    Learning how new weapons and tech changed how wars were fought. From advances in health technology to tanks, we learn about the progression of military technology and its effects on society.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-6 animate-slideInUp delay-2">
+                    <a href="#overview" class="bg-amber-600 hover:bg-amber-700 text-white px-6 md:px-8 py-3 rounded-full font-medium transition-all duration-200 hover:scale-105 button-press shadow-md">
+                        Start Reading
+                    </a>
+
+                    <a id="rickRollBtn" href="#innovations" class="border border-neutral-600 hover:border-amber-400 text-neutral-300 hover:text-amber-400 px-6 md:px-8 py-3 rounded-full font-medium transition-all duration-200 button-press shadow-sm">
+                        Explore Topics
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="bg-neutral-800 w-full text-white text-center py-12">
+        <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-3 animate-slideInUp">Overview</h1>
+        <p class="text-neutral-400 mb-12 max-w-2xl mx-auto text-sm md:text-lg px-6 animate-slideInUp delay-1">Explore the three key aspects of military technology in the 20th century</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-10 px-6 max-w-6xl mx-auto">
+            <div id="overview-card-1" class="rounded-xl p-6 md:p-8 bg-gradient-to-br from-neutral-800 via-neutral-850 to-neutral-900 border border-amber-500/30 transition-all duration-300 transform group animate-fadeInScale delay-1">
+                <div class="w-16 md:w-20 h-16 md:h-20 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg transition-all duration-300">
+                    <h1 class="text-2xl md:text-4xl font-bold text-white">1</h1>
+                </div>
+
+                <h1 class="text-base md:text-2xl font-bold mt-3 md:mt-4 leading-tight transition-colors duration-200">Military Advancements</h1>
+                <p class="text-neutral-400 text-xs md:text-sm mt-2 md:mt-3 leading-relaxed">
+                    <span class="md:hidden">New weapons and tech transformed warfare</span>
+                    <span class="hidden md:inline">Revolutionary weapons and technology that transformed warfare strategies and military capabilities</span>
+                </p>
+            </div>
+
+            <div id="overview-card-2" class="rounded-xl p-6 md:p-8 bg-gradient-to-br from-neutral-800 via-neutral-850 to-neutral-900 border border-amber-500/30 transition-all duration-300 transform group animate-fadeInScale delay-2">
+                <div class="w-16 md:w-20 h-16 md:h-20 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg transition-all duration-300">
+                    <h1 class="text-2xl md:text-4xl font-bold text-white">2</h1>
+                </div>
+
+                <h1 class="text-base md:text-2xl font-bold mt-3 md:mt-4 leading-tight transition-colors duration-200">Civilian Applications</h1>
+                <p class="text-neutral-400 text-xs md:text-sm mt-2 md:mt-3 leading-relaxed">
+                    <span class="md:hidden">Military tech adapted for everyday use</span>
+                    <span class="hidden md:inline">How military innovations were adapted and repurposed for everyday civilian use and society</span>
+                </p>
+            </div>
+
+            <div id="overview-card-3" class="rounded-xl p-6 md:p-8 bg-gradient-to-br from-neutral-800 via-neutral-850 to-neutral-900 border border-amber-500/30 transition-all duration-300 animate-fadeInScale delay-3">
+                <div class="w-16 md:w-20 h-16 md:h-20 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg transition-all duration-300">
+                    <h1 class="text-2xl md:text-4xl font-bold text-white">3</h1>
+                </div>
+
+                <h1 class="text-base md:text-2xl font-bold mt-3 md:mt-4 leading-tight transition-colors duration-200">Global Impact</h1>
+                <p class="text-neutral-400 text-xs md:text-sm mt-2 md:mt-3 leading-relaxed">
+                    <span class="md:hidden">Tech warfare shaped modern society</span>
+                    <span class="hidden md:inline">The lasting effects of technological warfare on modern society and international relations</span>
+                </p>
+            </div>
+
+            <div id="overview-card-4" class="rounded-xl p-6 md:p-8 bg-gradient-to-br from-neutral-800 via-neutral-850 to-neutral-900 border border-amber-500/30 transition-all duration-300 animate-fadeInScale delay-3">
+                <div class="w-16 md:w-20 h-16 md:h-20 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg transition-all duration-300">
+                    <h1 class="text-2xl md:text-4xl font-bold text-white">4</h1>
+                </div>
+
+                <h1 class="text-base md:text-2xl font-bold mt-3 md:mt-4 leading-tight transition-colors duration-200">Medical Technology Advances</h1>
+                <p class="text-neutral-400 text-xs md:text-sm mt-2 md:mt-3 leading-relaxed">
+                    <span class="md:hidden">Medical Technology Advances</span>
+                    <span class="hidden md:inline">Life-saving advances born from military technology and research</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="bg-neutral-900 w-full text-white text-center py-20 overflow-hidden">
+        <h1 class="text-3xl md:text-4xl font-bold mb-3 animate-slideInUp">Timeline Of Events</h1>
+        <p class="text-neutral-400 mb-8 max-w-2xl mx-auto text-base md:text-lg px-6 animate-slideInUp delay-1">
+            Track how military developments evolved over the years using the timeline below.
+        </p>
+
+        <p class="md:hidden text-amber-300 text-sm mb-6 px-6 animate-slideInUp delay-2">
+            📱 Scroll right to view all timeline events
+        </p>
+
+        <div id="actual-timeline" class="max-w-6xl mx-auto px-0 md:px-4 overflow-x-auto md:overflow-x-visible">
+            <div class="relative min-w-max md:min-w-full">
+                <div class="hidden md:block absolute left-10 right-10 top-5 h-1 rounded-full bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 opacity-80 z-0"></div>
+                <div class="flex flex-row gap-4 md:gap-6 md:justify-between px-4 md:px-0">
+
+                    <div class="flex-shrink-0 w-64 md:w-auto md:flex-1 md:flex-none md:w-1/5">
+                        <div class="flex md:flex-col items-start md:items-center gap-4">
+                            <div class="z-10">
+                                <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center shadow-lg border-4 border-neutral-900">
+                                    <span class="text-white font-bold">1</span>
+                                </div>
+                            </div>
+                            <div class="text-left md:text-center">
+                                <h3 class="text-lg font-bold text-amber-400 mb-1">1914-1918</h3>
+                                <p class="text-sm text-neutral-300 font-semibold">World War I</p>
+                                <p class="text-xs text-neutral-400 mt-2">Tanks, gas, aircraft</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-64 md:w-auto md:flex-1 md:flex-none md:w-1/5">
+                        <div class="flex md:flex-col items-start md:items-center gap-4">
+                            <div class="z-10">
+                                <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center shadow-lg border-4 border-neutral-900">
+                                    <span class="text-white font-bold">2</span>
+                                </div>
+                            </div>
+                            <div class="text-left md:text-center">
+                                <h3 class="text-lg font-bold text-amber-400 mb-1">1939-1945</h3>
+                                <p class="text-sm text-neutral-300 font-semibold">World War II</p>
+                                <p class="text-xs text-neutral-400 mt-2">Radar, jets, nukes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-64 md:w-auto md:flex-1 md:flex-none md:w-1/5">
+                        <div class="flex md:flex-col items-start md:items-center gap-4">
+                            <div class="z-10">
+                                <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center shadow-lg border-4 border-neutral-900">
+                                    <span class="text-white font-bold">3</span>
+                                </div>
+                            </div>
+                            <div class="text-left md:text-center">
+                                <h3 class="text-lg font-bold text-amber-400 mb-1">1950-1970</h3>
+                                <p class="text-sm text-neutral-300 font-semibold">Cold War Era</p>
+                                <p class="text-xs text-neutral-400 mt-2">ICBMs, satellites</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-64 md:w-auto md:flex-1 md:flex-none md:w-1/5">
+                        <div class="flex md:flex-col items-start md:items-center gap-4">
+                            <div class="z-10">
+                                <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center shadow-lg border-4 border-neutral-900">
+                                    <span class="text-white font-bold">4</span>
+                                </div>
+                            </div>
+                            <div class="text-left md:text-center">
+                                <h3 class="text-lg font-bold text-amber-400 mb-1">1970-1990</h3>
+                                <p class="text-sm text-neutral-300 font-semibold">Digital Revolution</p>
+                                <p class="text-xs text-neutral-400 mt-2">Stealth, precision</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-64 md:w-auto md:flex-1 md:flex-none md:w-1/5">
+                        <div class="flex md:flex-col items-start md:items-center gap-4">
+                            <div class="z-10">
+                                <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center shadow-lg border-4 border-neutral-900">
+                                    <span class="text-white font-bold">5</span>
+                                </div>
+                            </div>
+                            <div class="text-left md:text-center">
+                                <h3 class="text-lg font-bold text-amber-400 mb-1">1990-2000</h3>
+                                <p class="text-sm text-neutral-300 font-semibold">Modern Warfare</p>
+                                <p class="text-xs text-neutral-400 mt-2">GPS, drones, cyber</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="innovations" class="bg-neutral-800 w-full text-white text-center py-20 overflow-hidden">
+        <h1 class="text-4xl font-bold mb-3 animate-slideInUp">Innovations</h1>
+        <p class="text-neutral-400 mb-12 max-w-2xl mx-auto text-base md:text-lg px-6 animate-slideInUp delay-1">Discover the innovations that led to modern day warfare</p>
+
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                
+                <a href="html/figures.html" class="rounded-lg bg-neutral-900 p-8 hover:border-amber-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 hover:scale-105 transform animate-fadeInScale delay-1 group cursor-pointer">
+                    <div class="text-center">
+                        <div class="inline-block mb-4">
+                            <div class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center group-hover:bg-amber-500 transition-all duration-300 shadow-lg">
+                                <i data-lucide="user" class="w-8 h-8 text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-amber-400 mb-3 group-hover:text-amber-300 transition-colors">Key Figures</h3>
+                        <p class="text-neutral-300 mb-4">Pioneers and innovators who shaped military technology throughout history</p>
+                        <button class="bg-amber-600 hover:bg-amber-700 text-white px-6 md:px-8 py-3 rounded-full font-medium transition-all duration-200 hover:scale-105 button-press shadow-md">Read More <i data-lucide="arrow-right" class="w-4 h-4 inline"></i></button>
+                    </div>
+                </a>
+
+                <a href="html/civilian.html" class="rounded-lg bg-neutral-900 p-8 hover:border-amber-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 hover:scale-105 transform animate-fadeInScale delay-2 group cursor-pointer">
+                    <div class="text-center">
+                        <div class="inline-block mb-4">
+                            <div class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center group-hover:bg-amber-500 transition-all duration-300 shadow-lg">
+                                <i data-lucide="home" class="w-8 h-8 text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-amber-400 mb-3 group-hover:text-amber-300 transition-colors">Civilian Life</h3>
+                        <p class="text-neutral-300 mb-4">How military innovations transformed everyday civilian applications and society</p>
+                        <button class="bg-amber-600 hover:bg-amber-700 text-white px-6 md:px-8 py-3 rounded-full font-medium transition-all duration-200 hover:scale-105 button-press shadow-md">Read More <i data-lucide="arrow-right" class="w-4 h-4 inline"></i></button>
+                    </div>
+                </a>
+
+                <a href="html/medical.html" class="rounded-lg bg-neutral-900 p-8 hover:border-amber-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 hover:scale-105 transform animate-fadeInScale delay-3 group cursor-pointer">
+                    <div class="text-center">
+                        <div class="inline-block mb-4">
+                            <div class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center group-hover:bg-amber-500 transition-all duration-300 shadow-lg">
+                                <i data-lucide="stethoscope" class="w-8 h-8 text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-amber-400 mb-3 group-hover:text-amber-300 transition-colors">Medical Impact</h3>
+                        <p class="text-neutral-300 mb-4">Life-saving advances born from military technology and research</p>
+                        <button class="bg-amber-600 hover:bg-amber-700 text-white px-6 md:px-8 py-3 rounded-full font-medium transition-all duration-200 hover:scale-105 button-press shadow-md">Read More <i data-lucide="arrow-right" class="w-4 h-4 inline"></i></button>
+                    </div>
+                </a>
+
+                <a href="html/strategy.html" class="rounded-lg bg-neutral-900 p-8 hover:border-amber-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 hover:scale-105 transform animate-fadeInScale delay-4 group cursor-pointer">
+                    <div class="text-center">
+                        <div class="inline-block mb-4">
+                            <div class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center group-hover:bg-amber-500 transition-all duration-300 shadow-lg">
+                                <i data-lucide="zap" class="w-8 h-8 text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-amber-400 mb-3 group-hover:text-amber-300 transition-colors">Wartime Strategy</h3>
+                        <p class="text-neutral-300 mb-4">How military technology changed tactical and strategic warfare approaches</p>
+                        <button class="bg-amber-600 hover:bg-amber-700 text-white px-6 md:px-8 py-3 rounded-full font-medium transition-all duration-200 hover:scale-105 button-press shadow-md">Read More <i data-lucide="arrow-right" class="w-4 h-4 inline"></i></button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-900 border-t border-neutral-700/30 py-12 mt-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
+                        <div class="w-10 h-10 bg-amber-600 rounded-lg flex items-center justify-center shadow-lg">
+                            <span class="text-white font-bold text-lg">20</span>
+                        </div>
+                        <h3 class="text-xl font-instrument font-bold text-white">20th Century Reads</h3>
+                    </div>
+                    <p class="text-neutral-400 text-sm leading-relaxed">
+                        Exploring the evolution of military technology in the 20th century and its lasting impact on modern society.
+                    </p>
+                </div>
+
+                <div class="text-center md:text-left">
+                    <h4 class="text-white font-semibold mb-4 text-lg">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#overview" class="text-neutral-400 hover:text-amber-400 transition-colors duration-200 text-sm">Overview</a></li>
+                        <li><a href="#timeline" class="text-neutral-400 hover:text-amber-400 transition-colors duration-200 text-sm">Timeline</a></li>
+                        <li><a href="#innovations" class="text-neutral-400 hover:text-amber-400 transition-colors duration-200 text-sm">Innovations</a></li>
+                        <li><a href="#sources" class="text-neutral-400 hover:text-amber-400 transition-colors duration-200 text-sm">Sources</a></li>
+                    </ul>
+                </div>
+
+                <div class="text-center md:text-left">
+                    <h4 class="text-white font-semibold mb-4 text-lg">Topics</h4>
+                    <ul class="space-y-2">
+                        <li><a href="html/figures.html" class="text-neutral-400 hover:text-amber-400 transition-colors duration-200 text-sm flex items-center justify-center md:justify-start gap-2">
+                            <i data-lucide="user" class="w-4 h-4"></i> Key Figures
+                        </a></li>
+                        <li><a href="html/civilian.html" class="text-neutral-400 hover:text-amber-400 transition-colors duration-200 text-sm flex items-center justify-center md:justify-start gap-2">
+                            <i data-lucide="home" class="w-4 h-4"></i> Civilian Life
+                        </a></li>
+                        <li><a href="html/medical.html" class="text-neutral-400 hover:text-amber-400 transition-colors duration-200 text-sm flex items-center justify-center md:justify-start gap-2">
+                            <i data-lucide="stethoscope" class="w-4 h-4"></i> Medical Impact
+                        </a></li>
+                        <li><a href="html/strategy.html" class="text-neutral-400 hover:text-amber-400 transition-colors duration-200 text-sm flex items-center justify-center md:justify-start gap-2">
+                            <i data-lucide="zap" class="w-4 h-4"></i> Wartime Strategy
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div class="text-center text-white md:text-left">
+                    <h4 class="text-white font-semibold mb-4 text-lg">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="html/legal.html#privacy-policy" class="text-neutral-400 hover:text-amber-400 transition-colors duration-200 text-sm flex items-center justify-center md:justify-start gap-2">
+                            <i data-lucide="shield-check" class="w-4 h-4"></i> Privacy Policy
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-neutral-700/30 text-center">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-neutral-500 text-sm">
+                        © 2025 20th Century Reads - A <a href="https://kylersportfoliov2.vercel.app/" class="text-amber-400" target="_blank">Kyler Chan </a> Production. All rights reserved.
+                    </p>
+                    <div class="flex items-center space-x-6">
+                        <a href="#hero-section" class="text-neutral-400 hover:text-amber-400 transition-colors duration-200 text-sm flex items-center gap-2">
+                            <i data-lucide="arrow-up" class="w-4 h-4"></i> Back to Top
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+<script src="./scripts/scriptMain.js"></script>
+<script src="./scripts/tailwind.config.js"></script>
+</html>
